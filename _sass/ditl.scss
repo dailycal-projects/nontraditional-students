@@ -1,0 +1,95 @@
+.heading {
+	font-size: 28px;
+}
+
+.subtitle {
+	font-size: 14px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.fix {
+	padding-left: 1em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.scroll-nav__item {
+	font-size: 1.1em;
+	font-weight: 400;
+	padding-left: 1.2em;
+
+	a {
+		color: #34495e;
+	  text-decoration: none;
+	}
+
+	a:hover, a:focus {
+		color: #34495e;
+	  	text-decoration: none;
+	}
+}
+
+.scroll-nav__item:hover {
+  	border-left: #34495e 0.075em solid;
+  	padding-left: 1.15em;
+  	margin: 0;
+}
+
+
+
+.scroll-nav__item.active {
+  padding-left: 0.5em;
+  border-left: #34495e 0.15em solid;
+}
+
+.section {
+  padding-left: 0.5em;
+  border-left: #34495e 0.15em solid;
+}
+
+.profile-photo img {
+  object-fit: cover;
+  width: 250px;
+  height: 250px;
+  border: 1px black solid;
+  border-radius: 2px;
+}
+
+.profile-photo img:hover {
+	/*border: 1px black dashed;*/
+	border: 3px #00356B solid;
+}
+
+.profile-photo {
+  text-align: center;
+  padding-bottom: 3em;
+  cursor: pointer;
+}
+
+#profile-photo-container {
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+
+
+#scrollToTopContainer {
+	text-align: center;
+	padding: 2em;
+}
+
+.info-container img {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.info-container-general img {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}

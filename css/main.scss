@@ -1,0 +1,86 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "bootstrap",
+  "ditl"
+;
+
+.container {
+  max-width: 1000px;
+
+  .top {
+    text-align: center;
+  }
+
+  h1, h2, p, dl, table, blockquote {
+    max-width: 700px;
+    margin: $spacer auto;
+  }
+
+  h1 {
+    margin: 1.5rem auto 1rem auto;
+  }
+
+  // Capitalize main headline, byline, date
+  p.headline, p.byline, p.date {
+    text-transform: uppercase;
+  }
+
+  .lead {
+    margin: 0.5rem auto;
+  }
+
+  // Byline and date should be sans-serif
+  p.byline, p.date {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-sm;
+    margin: 0 auto;
+  }
+
+  // Except body text
+  section p, section dl, .blockquote {
+    text-align: left;
+  }
+
+  .table {
+    text-align: right;
+  }
+
+  dt {
+    font-family: sans-serif;
+  }
+
+  section {
+    margin: 2em auto;
+  }
+
+  .year {
+    font-family: sans-serif;
+    margin-right: 0.5em;
+    color: $gray-light;
+  }
+
+  // Graphics, sources
+  p.graphic-title {
+    max-width: 1000px;
+    margin: 1rem 0 -1.5rem 0;
+    font-size: $font-size-lg;
+  }
+
+  p.source {
+    max-width: 700px;
+    font-family: sans-serif;
+    margin-top: -1rem;
+    font-size: $font-size-xs;
+    color: $gray-light;
+
+    &.graphic-source {
+      max-width: 1000px;
+      margin: -1rem 0 0 0;
+    }
+  }
+}
